@@ -8,7 +8,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Fix CORS configuration - Allow multiple origins
-CORS(app, origins=['http://localhost:5173', 'http://localhost:5174', 'http://localhost:3000','https://city-fix.netlify.app/'], 
+CORS(app, origins=['https://city-fix.netlify.app'], 
      methods=['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
      allow_headers=['Content-Type', 'Authorization'])
 
